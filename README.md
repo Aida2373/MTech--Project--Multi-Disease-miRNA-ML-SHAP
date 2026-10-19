@@ -1,4 +1,4 @@
-# Explicating miRNAs Biomarkers Involved in Inflammatory Pathways Across Pulmonary, Cardiovascular, Neurological, and Pancreatic Diseases: A Machine Learning and SHAP-Based Approach
+# Explicating miRNA Biomarkers Involved in Inflammatory Pathways Across Pulmonary, Cardiovascular, Neurological, and Pancreatic Diseases: A Machine Learning and SHAP-Based Approach
 
 ## ⚠️ Academic & Publication Notice
 > **Manuscript Status:** Publication Pipeline / In Preparation
@@ -7,27 +7,31 @@
 ---
 
 ## 📌 Project Abstract & Analytical Framework
-This project presents an advanced multi-disease transcriptomic classification framework. The pipeline scales previous multi-system architectures by integrating pancreatic conditions alongside pulmonary, cardiovascular, and neurological states, analyzing pancreatic inflammation-driven mechanisms in direct relation to multi-system disorders.
+Pulmonary, cardiovascular, neurological, and pancreatic diseases are complex disorders characterized by shared inflammatory and molecular dysregulation. MicroRNAs (miRNAs) function as vital post-transcriptional regulators of inflammation, metabolic functions, and immune responses across these conditions. 
+
+This research establishes an independent, integrative machine learning and SHAP (SHapley Additive exPlanations) framework for multi-disease classification using peripheral blood miRNA expression profiles to isolate robust biomarkers and decipher common inflammation-driven mechanisms underlying multi-system disorders.
 
 ### 📊 Computational Workflow & Performance Metrics
-* **Objective:** Extend the multi-disease transcriptomic classification framework to incorporate pancreatic inflammation, providing deep insights into common inflammation-driven mechanisms underlying pancreatic conditions.
+* **Objective:** Design and validate a multi-disease transcriptomic classification framework incorporating pancreatic inflammation alongside pulmonary, cardiovascular, and neurological conditions to extract highly generalizable disease signatures.
 * **Disease Scope:** Chronic Obstructive Pulmonary Disease (**COPD**), **Lung Cancer**, Myocardial Infarction (**MI**), Multiple Sclerosis (**MS**), **Pancreatitis**, and Pancreatic Ductal Adenocarcinoma (**PDAC**).
-* **Validation & Feature Engineering:** The baseline Random Forest model achieved **71% accuracy**, which successfully scaled to **72% upon independent external validation**.
-* **Iterative Optimization:** Retraining the classifier strictly utilizing the **SHAP-selected top 20 optimal miRNA features** dramatically boosted model performance, yielding a final predictive accuracy of **79%**, indicating significantly enhanced predictive performance.
-* **Pathway Convergence:** Key predictive targets were found to converge heavily on cross-disease metabolic, inflammatory, and hypoxic pathways (**NF-κB, PI3K/Akt, MAPK, Wnt/β-catenin, and HIF-1α**), regulating systemic cytokine production, hypoxia, and cellular proliferation across these diseases.
+* **Baseline Benchmarking:** Following multi-cohort matrix preprocessing, an ensemble **Random Forest** classification model was developed, achieving an initial baseline accuracy of **71%**.
+* **Independent External Validation:** To rigorously evaluate model generalizability across platform variations, the classifier was subjected to testing against unseen independent datasets, successfully scaling its predictive performance to **72% accuracy**.
+* **SHAP-Driven Iterative Optimization:** Model-agnostic feature engineering was applied to refine the target feature space. Retraining the classifier strictly utilizing the **SHAP-selected top 20 optimal miRNA features** dramatically boosted final predictive capabilities, yielding an optimized multi-class classification accuracy of **79%**.
+* **Pathway Convergence & Biological Signatures:** Downstream biological annotation revealed that the prioritized high-importance features converge significantly on core cross-disease metabolic, inflammatory, and hypoxic pathways—specifically **NF-κB, PI3K/Akt, MAPK, Wnt/β-catenin, and HIF-1α**. These targets show a unified regulatory influence over systemic cytokine production, hypoxia, and cellular proliferation across both inflammatory and malignant disease profiles.
 
 ---
 
 ## 🛠️ Computational Environment & Stack
+The machine learning pipeline and explainable AI architectures were constructed using robust data science toolkits:
 * **Feature Selection & ML:** Data science processing stack for Random Forest implementation, multi-class array configurations, and benchmark evaluations.
-* **Explainable AI:** Model-agnostic frameworks for extraction of local and global feature attribution interpretations (beeswarm layouts and predictive impact summary plots).
+* **Explainable AI:** Model-agnostic frameworks (`shap`) for extraction of local and global feature attribution interpretations, including beeswarm layouts and predictive impact summary plots.
 * **Bioinformatics Pipeline:** Public multi-cohort transcriptomic matrices compiled for systemic cross-comparisons.
 
 ---
 
 ## 📂 Repository Contents
 * `README.md` — Complete theoretical, methodological, and architectural framework.
-* `plots/` *(Optional)* — Folder reserved for peer-reviewed SHAP summary beeswarm plots, Random Forest ROC curves, and pathway network graphs.
+* `plots/` *(Optional Upload)* — Folder reserved for peer-reviewed SHAP summary beeswarm plots, Random Forest ROC curves, and pathway network graphs.
 
 ---
 
