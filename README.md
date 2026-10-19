@@ -1,4 +1,4 @@
-# Explicating Candidate miRNAs Involved in Inflammatory Pathways Across Pulmonary, Cardiovascular, Neurological, and Pancreatic Diseases: A Machine Learning and SHAP-Based Approach
+# Explicating miRNAs Biomarkers Involved in Inflammatory Pathways Across Pulmonary, Cardiovascular, Neurological, and Pancreatic Diseases: A Machine Learning and SHAP-Based Approach
 
 ## ⚠️ Academic & Publication Notice
 > **Manuscript Status:** Publication Pipeline / In Preparation
