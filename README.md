@@ -9,13 +9,13 @@
 ## 📌 Project Abstract & Analytical Framework
 Pulmonary, cardiovascular, neurological, and pancreatic diseases are complex disorders characterized by shared inflammatory and molecular dysregulation. MicroRNAs (miRNAs) function as vital post-transcriptional regulators of inflammation, metabolic functions, and immune responses across these conditions. 
 
-This research establishes an independent, integrative machine learning and SHAP (SHapley Additive exPlanations) framework for multi-disease classification using peripheral blood miRNA expression profiles to isolate robust biomarkers and decipher common inflammation-driven mechanisms underlying multi-system disorders.
+This research establishes an integrative machine learning and SHAP (SHapley Additive exPlanations) framework for multi-disease classification using peripheral blood miRNA expression profiles to isolate robust biomarkers and decipher common inflammation-driven mechanisms across four major disease classes.
 
 ### 📊 Computational Workflow & Performance Metrics
-* **Objective:** Design and validate a multi-disease transcriptomic classification framework incorporating pancreatic inflammation alongside pulmonary, cardiovascular, and neurological conditions to extract highly generalizable disease signatures.
+* **Objective:** Design and validate a multi-disease transcriptomic classification framework across pulmonary, cardiovascular, neurological, and pancreatic conditions to extract highly generalizable disease signatures.
 * **Disease Scope:** Chronic Obstructive Pulmonary Disease (**COPD**), **Lung Cancer**, Myocardial Infarction (**MI**), Multiple Sclerosis (**MS**), **Pancreatitis**, and Pancreatic Ductal Adenocarcinoma (**PDAC**).
 * **Baseline Benchmarking:** Following multi-cohort matrix preprocessing, an ensemble **Random Forest** classification model was developed, achieving an initial baseline accuracy of **71%**.
-* **Independent External Validation:** To rigorously evaluate model generalizability across platform variations, the classifier was subjected to testing against unseen independent datasets, successfully scaling its predictive performance to **72% accuracy**.
+* **Independent External Validation:** To rigorously evaluate model generalizability across platform variations, the classifier was subjected to testing against unseen independent datasets, successfully validating its predictive performance at **72% accuracy**.
 * **SHAP-Driven Iterative Optimization:** Model-agnostic feature engineering was applied to refine the target feature space. Retraining the classifier strictly utilizing the **SHAP-selected top 20 optimal miRNA features** dramatically boosted final predictive capabilities, yielding an optimized multi-class classification accuracy of **79%**.
 * **Pathway Convergence & Biological Signatures:** Downstream biological annotation revealed that the prioritized high-importance features converge significantly on core cross-disease metabolic, inflammatory, and hypoxic pathways—specifically **NF-κB, PI3K/Akt, MAPK, Wnt/β-catenin, and HIF-1α**. These targets show a unified regulatory influence over systemic cytokine production, hypoxia, and cellular proliferation across both inflammatory and malignant disease profiles.
 
